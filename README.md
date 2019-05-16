@@ -1,6 +1,6 @@
 # Gitium-Android-Core
 
-[![](https://img.shields.io/github/release/ac-micro-transfer/gitium-android-core.svg)](https://github.com/ac-micro-transfer/gitium-android-core/tree/v1.0.1) [![](https://img.shields.io/github/release/ac-micro-transfer/gitium-android-core.svg?label=maven)](https://github.com/ac-micro-transfer/mvn/tree/master/repository/releases/com/gitium/gitium-android-core)
+[![](https://img.shields.io/github/release/ac-micro-transfer/gitium-android-core.svg)](https://github.com/ac-micro-transfer/gitium-android-core/tree/v1.0.3) [![](https://img.shields.io/github/release/ac-micro-transfer/gitium-android-core.svg?label=maven)](https://github.com/ac-micro-transfer/mvn/tree/master/repository/releases/com/gitium/gitium-android-core)
 
 Core coding of gitium for android.
 
@@ -17,5 +17,5 @@ repositories {
 ```
 
 ```groovy
-implementation 'com.gitium:gitium-android-core:1.0.1'
+implementation 'com.gitium:gitium-android-core:1.0.3'
 ```

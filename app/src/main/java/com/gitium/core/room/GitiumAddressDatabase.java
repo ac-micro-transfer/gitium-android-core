@@ -1,7 +1,7 @@
 package com.gitium.core.room;
 
-import android.arch.persistence.room.Database;
-import android.arch.persistence.room.RoomDatabase;
+import androidx.room.Database;
+import androidx.room.RoomDatabase;
 
 import com.gitium.core.room.dao.GitiumAddressDao;
 import com.gitium.core.room.entity.GitiumAddress;

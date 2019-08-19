@@ -1,8 +1,8 @@
 package com.gitium.core.room.entity;
 
-import android.arch.persistence.room.ColumnInfo;
-import android.arch.persistence.room.Entity;
-import android.support.annotation.NonNull;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.annotation.NonNull;
 
 @Entity(tableName = "gitium_address", primaryKeys = {"seed", "address_index"})
 public class GitiumAddress {

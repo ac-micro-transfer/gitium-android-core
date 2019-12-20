@@ -7,8 +7,7 @@ android {
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 3
-        versionName "1.0.4"
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        versionName "1.0.5"
     }
     buildTypes {
         release {
@@ -18,20 +17,25 @@ android {
     }
 }
 
+task androidSourcesJar(type: Jar) {
+    archiveClassifier.set('sources')
+    from android.sourceSets.main.java.srcDirs
+}
+
 dependencies {
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test:runner:1.2.0'
-    implementation 'androidx.room:room-runtime:2.1.0'
-    annotationProcessor 'androidx.room:room-compiler:2.1.0'
-    implementation 'com.gitium:gitium-java:1.0.4'
+    implementation 'androidx.room:room-runtime:2.2.3'
+    annotationProcessor 'androidx.room:room-compiler:2.2.3'
+    implementation 'com.gitium:gitium-java:1.0.8'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.9'
 }
 
 group 'com.gitium'
-version '1.0.4'
+version '1.0.5'
 
 publishing {
     publications {
         maven(MavenPublication) {
+            artifact androidSourcesJar
             artifactId 'gitium-android-core'
             artifact 'build/outputs/aar/app-release.aar'
             pom.withXml {
